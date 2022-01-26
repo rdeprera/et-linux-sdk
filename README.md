@@ -1,14 +1,24 @@
 # SDK para Wolfenstein Enemy Territory
 Baseado no [SDK de Linux fornecido pela Splash Damage](https://www.splashdamage.com/games/wolfenstein-enemy-territory/) mas com atualizações:
 - Alterado a sintaxe dos scripts de compilação SCons e bundle para MAC para ficarem compatíveis com a versão 4 do SCons
-- Portado para Python3 e c++ 11
-- Compatibilidade com binários de 64 bits
+- Portado para **Python 3** e **c++ 11**
+- Binários de **64 bits** (@todo podendo ser ajustado para saída **32 bits**)
 
-## Compilação no Linux
-Exemplo:
-```shell
-scons BUILD=release BUILDMPBIN=1 COPYBINS=1 NOCONF=1
-```
+## Compilação
+1. Clone o SDK:
+  ```shell
+  git clone https://github.com/rdeprera/et-linux-sdk.git --depth 1 --branch master
+  cd et-linux-sdk/src
+  ```
+2. Instale as dependências compiladores (normalmente gcc e g++), SCons e Python 3. No Debian:
+  ```shell
+  sudo apt install gcc g++ scons python3 -y
+  ```
+3. Use o SCons para fazer a compilação, exemplo:
+  ```shell
+  cons BUILD=release BUILDMPBIN=1 COPYBINS=1 NOCONF=1
+  ```
+
 ### Parâmetros para Compilação usando o SCons
 ```shell
 Usage: scons [OPTIONS] [TARGET] [CONFIG]
