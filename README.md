@@ -5,9 +5,11 @@ Baseado no [SDK de Linux fornecido pela Splash Damage](https://www.splashdamage.
 - Binários de **64 bits** (@todo podendo ser ajustado para saída **32 bits**)
 
 ## Compilação
+
+### No Linux
 1. Clone o SDK:
   ```shell
-  git clone https://github.com/rdeprera/et-linux-sdk.git --depth 1 --branch master
+  git clone https://github.com/rdeprera/et-sdk.git --depth 1 --branch master
   cd et-linux-sdk/src
   ```
 2. Instale as dependências compiladores (normalmente gcc e g++), SCons e Python 3. No Debian:
