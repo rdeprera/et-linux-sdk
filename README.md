@@ -12,13 +12,18 @@ Baseado no [SDK de Linux fornecido pela Splash Damage](https://www.splashdamage.
   git clone https://github.com/rdeprera/et-sdk.git --depth 1 --branch master
   cd et-linux-sdk/src
   ```
-2. Instale as dependências compiladores (normalmente gcc e g++), SCons e Python 3. No Debian:
+2. Instale as dependências:
+  - Compiladores (normalmente gcc e g++)
+  - SCons
+  - Python 3
+
+  No Debian:
   ```shell
   sudo apt install gcc g++ scons python3 -y
   ```
 3. Use o SCons para fazer a compilação, exemplo:
   ```shell
-  cons BUILD=release BUILDMPBIN=1 COPYBINS=1 NOCONF=1
+  scons BUILD=release BUILDMPBIN=1 COPYBINS=1 NOCONF=1
   ```
 
 ### Parâmetros para Compilação usando o SCons
